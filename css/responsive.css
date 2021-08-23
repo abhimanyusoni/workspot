@@ -55,6 +55,9 @@
     .modal .modal-footer{padding: 1rem 0.8rem;}
     .site-header .header_wrapper .main-menu ul li a{font-size: 14px;}
     .onboarding-main .on-boarding-inner{padding: 20px 15px;}
+    .delegate-workspot-access .applyall {
+         padding: 1rem 1rem 1rem;
+    }
 }
 
 @media (max-width: 575px){
