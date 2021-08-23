@@ -19,19 +19,19 @@
                 </div>
                 <div class="main-menu">
                     <ul>
-                        <li><a class="active" href="javascript:void(0)">Home</a></li>
-                        <li><a href="javascript:void(0)">My Team</a></li>
+                        <li><a class="active" href="/">Home</a></li>
+                        <li><a href="./MyTeam.html">My Team</a></li>
                         <li><a href="javascript:void(0)">Office Maps</a></li>
                         <li><a href="javascript:void(0)">Help</a></li>
                     </ul>
                 </div>
                 <div class="right-menus">
-                    <div class="username">
+                    <div class="username has-dropdown">
                         <span>Alexander</span> <img src="./images/profileof.png" class="user-img" alt="">
                     </div>
                     <div class="profile-inner">
                         <ul class="profile-menus">
-                            <li><a href="javascript:void(0)">Settings</a></li>
+                            <li><a href="/profilepage.html">Profile</a></li>
                             <li><a href="javascript:void(0)">Options</a></li>
                             <li><a href="javascript:void(0)">Change password</a></li>
                             <li><a href="javascript:void(0)">Logout</a></li>
@@ -49,134 +49,85 @@
 
     <div class="wrapper_main">
 
-        <div class="my-profile">
+        <div class="onboarding-main">
+            
             <div class="container">
-                <h4 class="common-title">My Profile</h4>
-                <div class="card my-profile-inner">
-                    <div class="left-aside d-flex align-items-center justify-content-center">
-                        <div class="wrapper">
-                            <div class="profile-picture">
-                                <img src="./images/myprofile.png" alt="">
-                            </div>
-                            <h3 class="profile-username">Alexander Doe</h3>
-                            <span class="designation">UX / UI Designer</span>
-                        </div>
+                <div class="top-illustration">
+                    <div class="imaage-wrapper">
+                        <img src="./images/Illustration.svg" alt="">
                     </div>
-                    <div class="right-content">
-                        <div class="col_one">
-                            <div class="attr_one">
-                                <span>Employee ID</span>
-                                <p>237561</p>
-                            </div>
-                            <div class="attr_one">
-                                <span>Manager</span>
-                                <p>Cameron Williamson</p>
-                            </div>
-                        </div>
-                        <div class="col_one">
-                            <div class="attr_one">
-                                <span>Primary Office</span>
-                                <p>Birmingham, AL</p>
-                            </div>
-                            <div class="attr_one">
-                                <span>Assigned Space</span>
-                                <p>1435</p>
-                            </div>
-                        </div>
-                        <div class="col_one">
-                            <div class="attr_one">
-                                <span>Badge Number</span>
-                                <p>BB 4878 999</p>
-                                <a class="replace" href="javascript:void(0)"><img src="./images/edit.svg" alt="">Replace My Badge</a>
-                            </div>
-                        </div>
+                    <div class="welcome">
+                        <h2>Hello, Alexander</h2>
+                        <p>Let's complete your My Workspot profile</p>
                     </div>
-                </div>
+                </div>    
             </div>
-        </div>
+            
+            <div class="weekly-default mt-40">
+                <div class="container">
+                    <div class="card on-boarding-inner">
+                        
+                        <h4 class="common-title">Weekly Default</h4>
+                        <p class="w-50 stroke-2 mt-3">Your weekly default will pre-populate for each week unless you update My Workspot for a specific day. You can update My Workspot for a particular day on the homepage.</p>
+                        <div class="mt-4 weekly-default-inner px-0 d-flex flex-wrap">
+                            <div class="day_one">
+                                <p class="day-name">Monday</p>
+                                <div class="day-one-wrapper work-from-office border-top-blue">
+                                    <p class="work-station">Washington, DC</p>
+                                </div>
+                            </div>
+                            <div class="day_one">
+                                <p class="day-name">Tuesday</p>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#set_location">
+                                    <div class="day-one-wrapper add-location">
+                                        <img class="plus-icon" src="./images/plus.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="day_one">
+                                <p class="day-name">Wednesday</p>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#set_location">
+                                    <div class="day-one-wrapper add-location">
+                                        <img class="plus-icon" src="./images/plus.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="day_one">
+                                <p class="day-name">Thursday</p>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#set_location">
+                                    <div class="day-one-wrapper add-location">
+                                        <img class="plus-icon" src="./images/plus.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="day_one">
+                                <p class="day-name">Friday</p>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#set_location">
+                                    <div class="day-one-wrapper add-location">
+                                        <img class="plus-icon" src="./images/plus.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="badge-number">
+                            <p class="title">Badge Number <span>(Optional)</span></p>
+                            <div class="badge-number-inner">
+                                <input type="text" disabled value="BB">
+                                <input type="text" placeholder="XXX">
+                                <span>−</span>
+                                <input type="text" placeholder="XXX">
+                            </div>
+                        </div>
 
-        <div class="weekly-default mt-40">
-            <div class="container">
-                <h4 class="common-title">Weekly Default</h4>
-                <p class="w-50 stroke-2 mt-3">Your weekly default will pre-populate for each week unless you update My Workspot for a specific day. You can update My Workspot for a particular day on the homepage.</p>
-                <div class="card mt-4 weekly-default-inner d-flex flex-wrap">
-                    <div class="day_one">
-                        <p class="day-name">Monday</p>
-                        <div class="day-one-wrapper work-from-office border-top-blue">
-                            <p class="work-station">Washington, DC</p>
-                        </div>
-                    </div>
-                    <div class="day_one">
-                        <p class="day-name">Tuesday</p>
-                        <div class="day-one-wrapper work-from-office border-top-orange">
-                            <p class="work-station">Richmond, VA</p>
-                        </div>
-                    </div>
-                    <div class="day_one">
-                        <p class="day-name">Monday</p>
-                        <div class="day-one-wrapper work-from-office border-top-orange">
-                            <p class="work-station">Richmond, VA</p>
-                        </div>
-                    </div>
-                    <div class="day_one">
-                        <p class="day-name">Monday</p>
-                        <div class="day-one-wrapper work-from-home">
-                            <p class="work-station">Remote Work</p>
-                        </div>
-                    </div>
-                    <div class="day_one">
-                        <p class="day-name">Monday</p>
-                        <div class="day-one-wrapper work-from-home">
-                            <p class="work-station">Remote Work</p>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="workspot-access mt-40">
             <div class="container">
-                <h4 class="common-title">My Workspot Access</h4>
-                <p class="w-50 stroke-2 mt-3">You can delegate My Workspot access to other colleagues at EAB.</p>
-                <div class="card mt-4 work-access-inner">
-                    <div class="d-flex w-100 justify-content-between align-items-center">
-                        <h5>Delegate My Workspot access to</h5>
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#delegate_workspot" class="btn blue-color-btn">Delegate My Workspot Access</button>
-                    </div> 
-                    <div class="access-to">
-                        <div class="access-one">
-                            <img src="./images/profileof.png" alt="">
-                            Wade Warren
-                            <a class="close_btn" href="javascript:void(0)"><img src="./images/close.svg" alt=""></a>
-                        </div>
-                        <div class="access-one">
-                            <img src="./images/profileof.png" alt="">
-                            Cameron Williamson
-                            <a class="close_btn" href="javascript:void(0)"><img src="./images/close.svg" alt=""></a>
-                        </div>
-                    </div>                   
-                </div>
+                <button type="submit" class=" action-btn">Confirm</button>
             </div>
-        </div>
 
-        <div class="workspot-access mt-4">
-            <div class="container">
-                <div class="card work-access-inner">
-                    <div class="d-flex w-100 justify-content-between align-items-center">
-                        <h5>I Can Update My Workspot for</h5>
-                    </div> 
-                    <div class="access-to update-workshop">
-                        <div class="access-one">
-                            <img src="./images/profileof.png" alt="">
-                            Wade Warren
-                        </div>
-                        <div class="access-one">
-                            <img src="./images/profileof.png" alt="">
-                            Cameron Williamson
-                        </div>
-                    </div>                   
-                </div>
-            </div>
         </div>
 
     </div>
@@ -194,46 +145,46 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="delegate_workspot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="set_location" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <div class="modal-header d-block">
+              <h5 class="modal-title" id="exampleModalLabel">Set Tuesday Schedule</h5>
+              <p class="mb-0 mt-2 stroke-2">Choose a place where you usually work on this day <br> of the week</p>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form class="delegate-workspot-access" action="submit">
-                  <input type="search" placeholder="Search..." class="searchbox">
+                  <span class="small-title stroke-2 d-block mb-2">EAB Office</span>
                   <div class="form-group">
-                      <img src="./images/profileof.png" alt="">
+                      <div class="color-block blue-bg"></div>
                       <input id="jane" type="checkbox" class="checkbox">
-                      <label for="jane">Jane Cooper</label>
+                      <label for="jane">Washington, DC </label>
                   </div>
                   <div class="form-group">
-                    <img src="./images/workspot1.png" alt="">
+                    <div class="color-block orange-bg"></div>
                     <input id="wade" type="checkbox" class="checkbox">
-                    <label for="wade">Wade Warren</label>
+                    <label for="wade">Richmond, VA </label>
                 </div>
                 <div class="form-group">
-                    <img src="./images/workspot2.png" alt="">
+                    <div class="color-block green-bg"></div>
                     <input id="cameron" type="checkbox" class="checkbox">
-                    <label for="cameron">Cameron Williamson</label>
+                    <label for="cameron">Birmingham, AL</label>
                 </div>
                 <div class="form-group">
-                    <img src="./images/workspot3.png" alt="">
+                    <div class="color-block yellow-bg"></div>
                     <input id="leslie" type="checkbox" class="checkbox">
-                    <label for="leslie">Leslie Alexander</label>
+                    <label for="leslie">Bloomington, MN</label>
                 </div>
-                <div class="form-group">
-                    <img src="./images/workspot2.png" alt="">
+                <div class="form-group work-from-home">
+                    <div class="color-block gray-bg"></div>
                     <input id="cameron" type="checkbox" class="checkbox">
-                    <label for="cameron">Cameron Williamson</label>
+                    <label for="cameron">Remote Work</label>
                 </div>
-                <div class="form-group">
-                  <img src="./images/workspot1.png" alt="">
-                  <input id="wade" type="checkbox" class="checkbox">
-                  <label for="wade">Wade Warren</label>
-              </div>
+                <div class="applyall d-flex align-items-center">
+                    <input type="checkbox" id="apply-all">
+                    <label for="apply-all" class="stroke-2">Apply to all days of the week</label>
+                </div>
               </form>
             </div>
             <div class="modal-footer">

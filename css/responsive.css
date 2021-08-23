@@ -4,6 +4,7 @@
     .my-profile .my-profile-inner .right-content{width: calc(100% - 220px); padding: 10px 25px;}
     .weekly-default .weekly-default-inner .day_one .day-one-wrapper.work-from-office{background-size: 55px;}
     .weekly-default .weekly-default-inner .day_one .day-one-wrapper.work-from-home{background-size: 100px;}
+    body.modal-open .site-header{width: 100%;}
 }
 
 @media (max-width: 991px){
@@ -28,6 +29,9 @@
     .workspot-access .work-access-inner h5{font-size: 16px;}
     .workspot-access .work-access-inner{padding: 15px;}
     .my-profile .my-profile-inner .right-content .col_one .attr_one .replace{display: block; margin-top: 10px;}
+    .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input{font-size: 20px;}
+    .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input{max-width: 70px;}
+    .onboarding-main .top-illustration .welcome h2{font-size: 26px;}
 }
 
 @media (max-width: 767px){
@@ -50,8 +54,17 @@
     #delegate_workspot .delegate-workspot-access .form-group label::after{right: 20px;}
     .modal .modal-footer{padding: 1rem 0.8rem;}
     .site-header .header_wrapper .main-menu ul li a{font-size: 14px;}
+    .onboarding-main .on-boarding-inner{padding: 20px 15px;}
 }
 
 @media (max-width: 575px){
     .site-header .header_wrapper .main-menu{width: 220px; left: -220px;}
+    .onboarding-main .top-illustration .welcome h2{font-size: 24px;}
+    .onboarding-main .top-illustration .welcome p{font-size: 14px; margin-bottom: 0;}
+}
+
+@media (max-width: 340px){
+    .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input{max-width: 60px; margin-right: 5px;}
+    .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input:first-child{max-width: 55px; margin-right: 10px;}
+    .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input:last-child{margin-left: 5px;}
 }
