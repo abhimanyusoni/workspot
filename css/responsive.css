@@ -58,6 +58,7 @@
     .delegate-workspot-access .applyall {
          padding: 1rem 1rem 1rem;
     }
+    .delegate-workspot-access .small-title{padding: 0 1rem}
 }
 
 @media (max-width: 575px){
