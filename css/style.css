@@ -53,7 +53,7 @@ body {
   color: #526E88;
   font-size: 14px;
   line-height: 1.7;
-  background: #F5F7FA;
+  background: #f8faff;
 }
 
 body.modal-open .site-header {
@@ -182,7 +182,7 @@ input {
 .site-header .header_wrapper .right-menus .mobile-menu-toggler span.close-btn:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  margin-top: -11px;
+  margin-top: -12px;
 }
 
 .site-header .header_wrapper .right-menus .mobile-menu-toggler span.close-btn:nth-child(2) {
@@ -287,7 +287,6 @@ input {
 
 .site-footer {
   padding: 18px 0;
-  margin-top: 30px;
   background: #002D50;
 }
 
@@ -312,6 +311,7 @@ input {
       -ms-flex-direction: unset;
           flex-direction: unset;
   display: block;
+  background-color: #fff !important;
 }
 
 .wrapper_main {
@@ -435,6 +435,7 @@ input {
   font-size: 14px;
   font-weight: 600;
   text-align: center;
+  color: #002D50;
 }
 
 .weekly-default .weekly-default-inner .day_one .day-one-wrapper {
@@ -446,6 +447,7 @@ input {
 
 .weekly-default .weekly-default-inner .day_one .day-one-wrapper .work-station {
   font-weight: 600;
+  color: #002D50;
 }
 
 .weekly-default .weekly-default-inner .day_one .day-one-wrapper.work-from-office {
@@ -951,5 +953,257 @@ input {
   background: #D1DCE7;
   opacity: 1;
   cursor: not-allowed;
+}
+
+.building-block-head {
+  padding: 30px 40px;
+}
+
+.building-block-head.blue {
+  background: url(../images/zone-blue.png) no-repeat right center;
+  background-size: 55%;
+}
+
+.building-block-head.blue .color-code {
+  color: #0072CE;
+}
+
+.building-block-head > p span {
+  font-weight: 600;
+  color: #000;
+}
+
+.building-block-head .block-info {
+  margin-top: 25px;
+}
+
+.building-block-head .block-info .building-name {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.building-block-head .block-info .floor-name {
+  font-size: 48px;
+  margin: 0 20px;
+  padding: 0 20px;
+  border-left: 1px solid #D1DCE7;
+  border-right: 1px solid #D1DCE7;
+  line-height: 1;
+}
+
+.building-block-head .block-info .color-code {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.building-block-head .building-location-strip {
+  margin-top: 100px;
+}
+
+.building-block-head .building-location-strip > div {
+  font-size: 12px;
+}
+
+.building-block-head .building-location-strip > div img {
+  margin-right: 10px;
+}
+
+.building-block-head .building-location-strip .location {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid #D1DCE7;
+}
+
+.building-block-head .building-location-strip .change-workspot .change-workspot {
+  color: #526E88;
+  font-size: 14px;
+}
+
+.building-block-head .building-location-strip .change-workspot .change-workspot:hover {
+  color: #0072CE;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-name {
+  margin-bottom: 10px;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .date {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #002D50;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 12px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .date.today {
+  background-color: #C8E9FF;
+  color: #0072CE;
+}
+
+.update-office-workspot .weekly-default-inner .day_one.disabled .day-one-wrapper {
+  opacity: 0.5;
+}
+
+.update-office-workspot .weekly-default-inner .day_one.disabled .date {
+  opacity: 0.5;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-one-wrapper {
+  padding: 3px 12px 4px;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-one-wrapper.work-from-office {
+  background-image: none;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-one-wrapper.paid-off {
+  background: #F4EEFF url(../images/beach-trees.svg) no-repeat center bottom;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-one-wrapper.work-from-home .work-station, .update-office-workspot .weekly-default-inner .day_one .day-one-wrapper.paid-off .work-station {
+  text-align: center;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-one-wrapper.has-half-paid-off {
+  min-height: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+
+.update-office-workspot .weekly-default-inner .day_one .day-one-wrapper.half-paid-off {
+  border: 1px solid #E2D2FF;
+  height: 40px;
+  min-height: 40px;
+  background: #F4EEFF url(../images/beach-trees.svg) no-repeat center right;
+  background-size: 44px;
+  background-position-x: calc(100% - 10px);
+}
+
+.update-office-workspot .week-range {
+  font-size: 18px;
+  font-family: 'Museo Sans Bold';
+  color: #002D50;
+}
+
+.update-office-workspot .input-button-strip .change-log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #D1DCE7;
+  background-color: #fff;
+}
+
+.update-office-workspot .input-button-strip .change-log .prev, .update-office-workspot .input-button-strip .change-log .next {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  height: 48px;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+.update-office-workspot .input-button-strip .change-log .what-day {
+  padding: 0px 20px;
+  border-left: 1px solid #D1DCE7;
+  border-right: 1px solid #D1DCE7;
+  font-size: 16px;
+  -webkit-text-stroke: 0.2px;
+}
+
+.update-office-workspot .week-month-toggle {
+  height: 48px;
+  padding: 2px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #D1DCE7;
+  margin-left: 18px;
+}
+
+.update-office-workspot .week-month-toggle .week-view {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 90px;
+  -webkit-text-stroke: 0.2px;
+}
+
+.update-office-workspot .week-month-toggle .week-view.active {
+  background-color: #C8E9FF;
+  color: #0072CE;
+  border-radius: 6px;
+}
+
+.update-office-workspot .updatespot {
+  margin-left: auto;
+}
+
+.blue-bg-btn {
+  background-color: #0072CE;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid #0072CE;
+}
+
+.blue-bg-btn:hover {
+  background-color: transparent;
+  color: #0072CE;
+  -webkit-text-stroke: 0.2px;
+}
+
+.light-blue-bg-btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #0072CE;
+  border: 1px solid #0072CE;
+  background: #C8E9FF;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-text-stroke: 0.15px;
+}
+
+.light-blue-bg-btn:hover {
+  background: transparent;
+}
+
+.light-blue-bg-btn img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

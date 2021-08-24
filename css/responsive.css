@@ -1,3 +1,9 @@
+@media (max-width: 1365px){
+    .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{
+        font-size: 32px;
+    }
+}
+
 @media (max-width: 1199px){
     .w-50{width: 100% !important;}
     .my-profile .my-profile-inner .left-aside{width: 220px;}
@@ -5,6 +11,12 @@
     .weekly-default .weekly-default-inner .day_one .day-one-wrapper.work-from-office{background-size: 55px;}
     .weekly-default .weekly-default-inner .day_one .day-one-wrapper.work-from-home{background-size: 100px;}
     body.modal-open .site-header{width: 100%;}
+    .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{
+        font-size: 32px;
+    }
+    .building-block-head .building-location-strip {margin-top: 60px;}
+    .building-block-head .block-info{margin-top: 0;}
+    .building-block-head{background-size: auto !important;}
 }
 
 @media (max-width: 991px){
@@ -32,6 +44,8 @@
     .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input{font-size: 20px;}
     .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input{max-width: 70px;}
     .onboarding-main .top-illustration .welcome h2{font-size: 26px;}
+    .update-office-workspot .weekly-default-inner .day_one .date{margin-bottom: 12px; width: 25px; height: 25px;}
+    .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{font-size: 26px;}
 }
 
 @media (max-width: 767px){
@@ -43,7 +57,7 @@
     .workspot-access .work-access-inner > div:first-child{display: block !important;}
     .workspot-access .work-access-inner > div button{margin-top: 10px; padding: 8px 14px;}
     .workspot-access .work-access-inner .access-to .access-one:not(:last-child){margin-right: 10px;}
-    .wrapper_main{padding: 22px 0;}
+    .wrapper_main{padding: 30px 0;}
     .site-header{padding: 12px 0;}
     .site-header + *{margin-top: 72px;}
     .modal .modal-header .btn-close{right: 12px; top: 12px;}
@@ -55,20 +69,34 @@
     .modal .modal-footer{padding: 1rem 0.8rem;}
     .site-header .header_wrapper .main-menu ul li a{font-size: 14px;}
     .onboarding-main .on-boarding-inner{padding: 20px 15px;}
-    .delegate-workspot-access .applyall {
-         padding: 1rem 1rem 1rem;
-    }
-    .delegate-workspot-access .small-title{padding: 0 1rem}
+    .update-office-workspot .input-button-strip{flex-wrap: wrap;}
+    .update-office-workspot .input-button-strip .updatespot{margin-left: 0; width: 100%; margin-top: 20px;}
+    .building-block-head{background-image: none !important; padding: 15px 15px;}
+    .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{font-size: 22px; margin-bottom: 0;}
+    .building-block-head .block-info .floor-name{padding: 0 12px; margin: 0 12px;}
+    .building-block-head .building-location-strip > div{margin-top: 12px;}
+    .update-office-workspot .input-button-strip .change-log .what-day{font-size: 12px; padding: 0 12px;}
+    .update-office-workspot .input-button-strip .change-log .prev, .update-office-workspot .input-button-strip .change-log .next{width: 40px;}
+    .update-office-workspot .week-month-toggle{margin-left: 12px;}
+    .update-office-workspot .week-month-toggle .week-view{font-size: 12px; width: 70px;}
+    .blue-bg-btn, .light-blue-bg-btn{font-size: 14px;}
+    .update-office-workspot .week-range{font-size: 14px;}
+    .building-block-head .building-location-strip{display: block !important;}
+    .building-block-head .building-location-strip .location{border-right: none;}
 }
 
 @media (max-width: 575px){
     .site-header .header_wrapper .main-menu{width: 220px; left: -220px;}
     .onboarding-main .top-illustration .welcome h2{font-size: 24px;}
     .onboarding-main .top-illustration .welcome p{font-size: 14px; margin-bottom: 0;}
+    .update-office-workspot .input-button-strip .change-log .prev, .update-office-workspot .input-button-strip .change-log .next{width: 30px;}
+    .update-office-workspot .week-month-toggle .week-view{width: 60px;}
 }
 
 @media (max-width: 340px){
     .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input{max-width: 60px; margin-right: 5px;}
     .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input:first-child{max-width: 55px; margin-right: 10px;}
     .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input:last-child{margin-left: 5px;}
+    .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{font-size: 16px;}
+    .building-block-head > p{font-size: 12px;}
 }
