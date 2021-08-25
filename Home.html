@@ -78,7 +78,10 @@
                         </div>
                         <div class="office-resource">
                             <p>Office Resources</p>
-
+                            <div class="office-part-one">
+                                <input id="my-spot" type="checkbox">
+                                <label for="my-spot">My Workspot</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,57 +98,321 @@
                         <span class="what-day">Today</span>
                         <button type="submit" class="next">&rsaquo;</button>
                     </div>
-                    <div class="week-month-toggle">
-                        <button class="week-view active">Week</button>
-                        <button class="week-view">Month</button>
+                    <div class="week-month-toggle nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link week-view active" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week-view" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Week</button>
+                        <button class="nav-link week-view" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month-view" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Month</button>
                     </div>
                     <div class="updatespot">
                         <button type="submit" class="blue-bg-btn">Update My Workspot</button>                   
                     </div>
                 </div>
 
-                <div class="card weekly-default">
-                    <div class="card mt-4 weekly-default-inner d-flex flex-wrap">
-                        <div class="day_one disabled">
-                            <p class="day-name">Monday</p>
-                            <p class="date">14</p>
-                            <div class="day-one-wrapper work-from-office border-top-blue">
-                                <p class="work-station">Washington, DC</p>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-week-view" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="card weekly-default">
+                            <div class="card mt-4 weekly-default-inner d-flex flex-wrap">
+                                <div class="day_one disabled">
+                                    <p class="day-name">Monday</p>
+                                    <p class="date">14</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Washington, DC</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Tuesday</p>
+                                    <p class="date">15</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Wednesday</p>
+                                    <p class="date">16</p>
+                                    <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                    <div class="day-one-wrapper half-paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Thursday</p>
+                                    <p class="date">17</p>
+                                    <div class="day-one-wrapper work-from-home">
+                                        <p class="work-station">Remote Work</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Friday</p>
+                                    <p class="date">18</p>
+                                    <div class="day-one-wrapper paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="day_one">
-                            <p class="day-name">Tuesday</p>
-                            <p class="date today">15</p>
-                            <div class="day-one-wrapper work-from-office border-top-blue">
-                                <p class="work-station">Richmond, VA</p>
-                            </div>
-                        </div>
-                        <div class="day_one">
-                            <p class="day-name">Wednesday</p>
-                            <p class="date">16</p>
-                            <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
-                                <p class="work-station">Richmond, VA</p>
-                            </div>
-                            <div class="day-one-wrapper half-paid-off">
-                                <p class="work-station">Richmond, VA</p>
-                            </div>
-                        </div>
-                        <div class="day_one">
-                            <p class="day-name">Thursday</p>
-                            <p class="date">17</p>
-                            <div class="day-one-wrapper work-from-home">
-                                <p class="work-station">Remote Work</p>
-                            </div>
-                        </div>
-                        <div class="day_one">
-                            <p class="day-name">Friday</p>
-                            <p class="date">18</p>
-                            <div class="day-one-wrapper paid-off">
-                                <p class="work-station">Paid Time Off</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-month-view" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="card weekly-default month-view-content">
+                            <div class="card mt-4 weekly-default-inner d-flex flex-wrap">
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Sunday</p>
+                                    <p class="date">30</p>
+                                    <div class="day-one-wrapper">
+                                        <p class="work-station">Washington, DC</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Monday</p>
+                                    <p class="date">1</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Washington, DC</p>
+                                        <span class="floor-location"><img src="./images/floor-location.png" alt="">Fl 4-Blue</span>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Tuesday</p>
+                                    <p class="date">2</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Wednesday</p>
+                                    <p class="date">3</p>
+                                    <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                    <div class="day-one-wrapper half-paid-off">
+                                        <p class="work-station">Paid Time Off </p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Thursday</p>
+                                    <p class="date">4</p>
+                                    <div class="day-one-wrapper work-from-home">
+                                        <p class="work-station">Remote Work</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Friday</p>
+                                    <p class="date">5</p>
+                                    <div class="day-one-wrapper paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Saturday</p>
+                                    <p class="date">6</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Sunday</p>
+                                    <p class="date">7</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Monday</p>
+                                    <p class="date">8</p>
+                                    <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                    <div class="day-one-wrapper half-paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Tuesday</p>
+                                    <p class="date">9</p>
+                                    <div class="day-one-wrapper work-from-home">
+                                        <p class="work-station">Remote Work</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Wednesday</p>
+                                    <p class="date">10</p>
+                                    <div class="day-one-wrapper paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Thursday</p>
+                                    <p class="date">11</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Washington, DC</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Friday</p>
+                                    <p class="date">12</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Saturday</p>
+                                    <p class="date">13</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Sunday</p>
+                                    <p class="date">14</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Monday</p>
+                                    <p class="date">15</p>
+                                    <div class="day-one-wrapper paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Tuesday</p>
+                                    <p class="date">16</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Washington, DC</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Wednesday</p>
+                                    <p class="date">17</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Thursday</p>
+                                    <p class="date">18</p>
+                                    <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                    <div class="day-one-wrapper half-paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Friday</p>
+                                    <p class="date">19</p>
+                                    <div class="day-one-wrapper work-from-home">
+                                        <p class="work-station">Remote Work</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Saturday</p>
+                                    <p class="date">20</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one disabled weekend">
+                                    <p class="day-name">Sunday</p>
+                                    <p class="date">21</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Monday</p>
+                                    <p class="date">22</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Tuesday</p>
+                                    <p class="date">23</p>
+                                    <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                    <div class="day-one-wrapper half-paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one disabled">
+                                    <p class="day-name">Wednesday</p>
+                                    <p class="date">24</p>
+                                    <div class="day-one-wrapper work-from-home">
+                                        <p class="work-station">Remote Work</p>
+                                    </div>
+                                </div>
+                                <div class="day_one current-day">
+                                    <p class="day-name">Thursday</p>
+                                    <p class="date today">25</p>
+                                    <div class="day-one-wrapper paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Friday</p>
+                                    <p class="date">26</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Washington, DC</p>
+                                    </div>
+                                </div>
+                                <div class="day_one weekend">
+                                    <p class="day-name">Saturday</p>
+                                    <p class="date">27</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one weekend">
+                                    <p class="day-name">Sunday</p>
+                                    <p class="date">28</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Monday</p>
+                                    <p class="date">29</p>
+                                    <div class="day-one-wrapper work-from-home">
+                                        <p class="work-station">Remote Work</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Tuesday</p>
+                                    <p class="date">30</p>
+                                    <div class="day-one-wrapper paid-off">
+                                        <p class="work-station">Paid Time Off</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Wednesday</p>
+                                    <p class="date">31</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Washington, DC</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Thursday</p>
+                                    <p class="date">1</p>
+                                    <div class="day-one-wrapper work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                </div>
+                                <div class="day_one">
+                                    <p class="day-name">Friday</p>
+                                    <p class="date">2</p>
+                                    <div class="day-one-wrapper has-half-paid-off work-from-office border-top-blue">
+                                        <p class="work-station">Richmond, VA</p>
+                                    </div>
+                                    <div class="day-one-wrapper half-paid-off">
+                                        <p class="work-station">Paid Time Off </p>
+                                    </div>
+                                </div>
+                                <div class="day_one weekend">
+                                    <p class="day-name">Saturday</p>
+                                    <p class="date">3</p>
+                                    <div class="day-one-wrapper">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                
 
                 <button type="submit" class="light-blue-bg-btn mt-4"> <img src="./images/search-blue.svg" alt=""> Search for Colleagues</button>
 

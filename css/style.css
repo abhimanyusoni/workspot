@@ -467,6 +467,10 @@ input {
   border-top-color: #63BAFF !important;
 }
 
+.border-top-green {
+  border-top-color: #00B1B0 !important;
+}
+
 .blue-color-btn {
   padding: 12px 18px;
   color: #0072CE;
@@ -1152,7 +1156,8 @@ input {
   border: none;
   height: 100%;
   width: 90px;
-  -webkit-text-stroke: 0.2px;
+  font-family: 'Museo Sans Medium';
+  color: #0072CE;
 }
 
 .update-office-workspot .week-month-toggle .week-view.active {
@@ -1205,5 +1210,62 @@ input {
 
 .light-blue-bg-btn img {
   margin-right: 10px;
+}
+
+.weekly-default.month-view-content .day_one {
+  margin-bottom: 32px;
+  width: calc(14.28% - 10px);
+}
+
+.weekly-default.month-view-content .day_one.weekend .work-station {
+  display: none;
+}
+
+.weekly-default.month-view-content .day_one.weekend .day-one-wrapper {
+  height: 72px;
+  background: url(../images/strips-bg.png) no-repeat center !important;
+  background-size: cover !important;
+}
+
+.weekly-default.month-view-content .day_one .day-one-wrapper.work-from-office {
+  background-image: url(../images/Buildings.png) !important;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.weekly-default.month-view-content .day_one.disabled .day-one-wrapper.work-from-office, .weekly-default.month-view-content .day_one.current-day .day-one-wrapper.work-from-office {
+  background-image: none !important;
+}
+
+.weekly-default.month-view-content .day_one .work-station {
+  margin-bottom: 6px;
+}
+
+.weekly-default.month-view-content .day_one .day-one-wrapper.has-half-paid-off {
+  background-position-x: calc(100% - 10px);
+  background-size: 40px;
+}
+
+.weekly-default.month-view-content .day_one .floor-location {
+  font-size: 12px;
+  color: #526E88;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekly-default.month-view-content .day_one .floor-location img {
+  margin-right: 7px;
+}
+
+.weekly-default.month-view-content .day_one:nth-child(7n) {
+  margin-right: 0;
+}
+
+.weekly-default.month-view-content .day_one:nth-child(n+8) .day-name {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

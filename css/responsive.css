@@ -17,6 +17,7 @@
     .building-block-head .building-location-strip {margin-top: 60px;}
     .building-block-head .block-info{margin-top: 0;}
     .building-block-head{background-size: auto !important;}
+    .weekly-default .weekly-default-inner .day_one .day-one-wrapper .work-station{font-size: 12px;}
 }
 
 @media (max-width: 991px){
@@ -46,6 +47,7 @@
     .onboarding-main .top-illustration .welcome h2{font-size: 26px;}
     .update-office-workspot .weekly-default-inner .day_one .date{margin-bottom: 12px; width: 25px; height: 25px;}
     .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{font-size: 26px;}
+    .weekly-default.month-view-content .day_one:nth-child(n+8) .day-name{display: block;}
 }
 
 @media (max-width: 767px){
@@ -83,6 +85,9 @@
     .update-office-workspot .week-range{font-size: 14px;}
     .building-block-head .building-location-strip{display: block !important;}
     .building-block-head .building-location-strip .location{border-right: none;}
+    .delegate-workspot-access .small-title{padding: 0 1rem;}
+    .delegate-workspot-access .form-group{padding: 0.85rem 3rem 0.85rem 1rem;}
+    .delegate-workspot-access .applyall{padding: 1rem;}
 }
 
 @media (max-width: 575px){
