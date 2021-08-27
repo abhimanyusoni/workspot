@@ -18,6 +18,8 @@
     .building-block-head .block-info{margin-top: 0;}
     .building-block-head{background-size: auto !important;}
     .weekly-default .weekly-default-inner .day_one .day-one-wrapper .work-station{font-size: 12px;}
+    .office-structure .office-structure-inner .left-panel .office-info{padding: 20px 18px 15px;}
+    .office-structure .office-structure-inner .left-panel .office-resource{padding: 20px 18px;}
 }
 
 @media (max-width: 991px){
@@ -48,6 +50,11 @@
     .update-office-workspot .weekly-default-inner .day_one .date{margin-bottom: 12px; width: 25px; height: 25px;}
     .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{font-size: 26px;}
     .weekly-default.month-view-content .day_one:nth-child(n+8) .day-name{display: block;}
+    .weekly-default.month-view-content .day_one:nth-child(7n){margin-right: 5px; margin-left: 5px;}
+    .office-structure .office-structure-inner .left-panel,
+    .office-structure .office-structure-inner .right-map{width: 100%;}
+    .office-structure .office-structure-inner .left-panel{border-bottom: 1px solid #EBEEF1;}
+    .office-structure .office-structure-inner{flex-wrap: wrap;}
 }
 
 @media (max-width: 767px){
@@ -88,6 +95,12 @@
     .delegate-workspot-access .small-title{padding: 0 1rem;}
     .delegate-workspot-access .form-group{padding: 0.85rem 3rem 0.85rem 1rem;}
     .delegate-workspot-access .applyall{padding: 1rem;}
+    .weekly-default.month-view-content .day_one:nth-child(7n){margin-right: 0px; margin-left: 0px;}
+    .office_maps .head {display: block !important;}
+    .office_maps .head .office-selections .selction_one:not(:last-child){margin: 0;}
+    .office_maps .head .office-selections .selction_one{width: calc(50% - 8px);}
+    .office_maps .head .office-selections .selction_one select{width: 100%; text-overflow: ellipsis;}
+    .office_maps .head .office-selections{justify-content: space-between; margin-top: 20px;}
 }
 
 @media (max-width: 575px){
@@ -95,7 +108,9 @@
     .onboarding-main .top-illustration .welcome h2{font-size: 24px;}
     .onboarding-main .top-illustration .welcome p{font-size: 14px; margin-bottom: 0;}
     .update-office-workspot .input-button-strip .change-log .prev, .update-office-workspot .input-button-strip .change-log .next{width: 30px;}
-    .update-office-workspot .week-month-toggle .week-view{width: 60px;}
+    .update-office-workspot .week-month-toggle .week-view{width: 60px; padding-left: 0; padding-right: 0;}
+    .calendar_main .bottom{display: block;}
+    .calendar_main .bottom span{width: 100%;}
 }
 
 @media (max-width: 340px){
@@ -104,4 +119,5 @@
     .onboarding-main .on-boarding-inner .badge-number .badge-number-inner input:last-child{margin-left: 5px;}
     .building-block-head .block-info .building-name, .building-block-head .block-info .floor-name, .building-block-head .block-info .color-code{font-size: 16px;}
     .building-block-head > p{font-size: 12px;}
+    .datepicker-Wrapper .date{width: 2rem; height: 2rem;}
 }
