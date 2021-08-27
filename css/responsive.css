@@ -101,6 +101,7 @@
     .office_maps .head .office-selections .selction_one{width: calc(50% - 8px);}
     .office_maps .head .office-selections .selction_one select{width: 100%; text-overflow: ellipsis;}
     .office_maps .head .office-selections{justify-content: space-between; margin-top: 20px;}
+    .modal .modal-body{padding: 1rem 1rem;}
 }
 
 @media (max-width: 575px){
