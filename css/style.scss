@@ -82,6 +82,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: #00355F;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -118,7 +119,6 @@ input[type="text"]{
     border-radius: 8px;
     padding: 5px 12px;
     height: 48px;
-    font: 600 16px "Museo Sans Medium";
 }
 .selection{
     position: relative;
@@ -459,6 +459,7 @@ input[type="text"]{
                 .work-station{
                     font-weight: 600;
                     color: #002D50;
+                    margin-bottom: 6px;
                 }
 
                 &.work-from-office{
@@ -483,6 +484,9 @@ input[type="text"]{
 .border-top-green{
     border-top-color: #00B1B0 !important;
 }
+.border-top-black{
+    border-top-color: #00355F !important;
+}
 .blue-color-btn{
     padding: 12px 18px;
     color: #0072CE;
@@ -504,55 +508,111 @@ input[type="text"]{
             font-family: 'Museo Sans Bold';
             margin-bottom: 0;
         }
-        .access-to{
+    }
+}
+
+.access-to{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+    &.update-workshop{
+        margin-top: 25px;
+        .access-one{
+            padding: 0;
+            border: none;
+        }
+    }
+
+    .access-one{
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        padding: 4px 5px;
+        border: 1px solid #D1DCE7;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 14px;
+        color: #002D50;
+        margin: 4px 0;
+
+        & > img{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+        }
+        .close_btn{
             display: flex;
-            flex-wrap: wrap;
-            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            background: #EBEEF1;
+            border-radius: 50%;
+            margin-left: 12px;
+            border: 2px solid #EBEEF1;
 
-            &.update-workshop{
-                margin-top: 25px;
-                .access-one{
-                    padding: 0;
-                    border: none;
-                }
+            &:hover{
+                border-color: #ccc;
             }
+        }
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+}
 
+.invite-team-wrapp{
+    border: 1px solid #D1DCE7;
+    border-radius: 8px;
+    padding: 8px 10px;
+
+    &.choose-date{
+        position: relative;
+        padding-right: 38px;
+
+        .access-to{
             .access-one{
-                display: flex;
-                align-items: center;
-                line-height: 1;
-                padding: 4px 5px;
-                border: 1px solid #D1DCE7;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 14px;
-                color: #002D50;
-                margin: 4px 0;
+                padding: 4px;
+                padding-left: 10px;
+            }
+        }
+        .material-icons-outlined{
+            position: absolute;
+            right: 15px;
+            top: 48%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #95A7B8;
+        }
+    }
 
-                & > img{
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    margin-right: 8px;
-                }
-                .close_btn{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 18px;
-                    height: 18px;
-                    background: #EBEEF1;
-                    border-radius: 50%;
-                    margin-left: 12px;
-                    border: 2px solid #EBEEF1;
+    .access-to{
+        margin-top: 0;
 
-                    &:hover{
-                        border-color: #ccc;
-                    }
-                }
-                &:not(:last-child){
-                    margin-right: 15px;
+        .access-one{
+            background: #EBEEF1;
+            padding: 0;
+            padding-right: 3px;
+            margin-right: 6px;
+            font-size: 12px;
+
+            &:hover{
+                background: #D1DCE7;
+            }
+            
+            & > img{
+                width: 24px;
+                height: 24px;
+                border: 2px solid #fff;
+            }
+            .close_btn{
+                background: #D1DCE7;
+
+                &:hover{
+                    background: rgba(82, 110, 136, 0.7);
                 }
             }
         }
@@ -638,7 +698,7 @@ input[type="text"]{
             padding: 10px 25px;
             font-size: 16px;
             color: #fff;
-            font-weight: 600;
+            font-weight: 400;
 
             &:hover{
                 background: #005aa3;
@@ -1111,6 +1171,115 @@ input[type="text"]{
         margin-left: auto;
     }
 }
+.day_one{
+    .day-name{
+        margin-bottom: 10px;
+    }
+    .date{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #002D50;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 12px;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+
+        &.today{
+            background-color: #C8E9FF;
+            color: #0072CE;
+        }
+    }
+    &.disabled{
+        .day-one-wrapper{
+            opacity: 0.5;
+        }
+        .date{
+            opacity: 0.5;
+        }
+    }
+    .day-one-wrapper{
+        padding: 3px 12px 4px;
+        &.work-from-office{
+            background-image: none;
+        }
+        &.paid-off{
+            background: #F4EEFF url(../images/beach-trees.svg) no-repeat center bottom;
+        }
+        &.work-from-home, &.paid-off{
+            .work-station{
+                text-align: center;
+            }       
+        }
+        &.has-half-paid-off{
+            min-height: 40px !important;
+            height: 40px !important;
+            margin-bottom: 8px;
+            background-size: 44px !important;
+            background-position-x: calc(100% - 10px) !important;
+
+            p{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+        &.half-paid-off{
+            border: 1px solid #E2D2FF;
+            height: 40px !important;
+            min-height: 40px !important;
+            background: #F4EEFF url(../images/beach-trees.svg) no-repeat center right;
+            background-size: 44px;
+            background-position-x: calc(100% - 10px);
+
+            p{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+} 
+.week-range{
+    font-size: 18px;
+    font-family: 'Museo Sans Bold';
+    color: #002D50;
+}
+.input-button-strip{
+    .change-log{
+        display: flex;
+        align-items: center;
+        height: 48px;
+        border-radius: 8px;
+        border: 1px solid #D1DCE7;
+        background-color: #fff;
+
+        .prev, .next{
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            height: 48px;
+            background-color: transparent;
+            font-size: 22px;
+        }
+        .what-day{
+            padding: 0px 20px;
+            border-left: 1px solid #D1DCE7;
+            border-right: 1px solid #D1DCE7;
+            font-size: 16px;
+            -webkit-text-stroke: 0.2px;
+        }
+    }
+}
+.updatespot{
+    margin-left: auto;
+}
 
 .blue-bg-btn{
     background-color: #0072CE;
@@ -1183,17 +1352,6 @@ input[type="text"]{
                     background-size: 40px;
                 }
             }
-
-            .floor-location{
-                font-size: 12px;
-                color: #526E88;
-                display: flex;
-                align-items: center;
-
-                img{
-                    margin-right: 7px;
-                }
-            }
             
             &:nth-child(7n){
                 margin-right: 0;
@@ -1208,6 +1366,16 @@ input[type="text"]{
     }
 }
 
+.floor-location{
+    font-size: 12px;
+    color: #526E88;
+    display: flex;
+    align-items: center;
+
+    img{
+        margin-right: 7px;
+    }
+}
 
 .office_maps{
     .head{
@@ -1663,12 +1831,99 @@ input[type="text"]{
         padding-top: 0;
     }
 }
-.calendarpop{
+.modal{
     .notice{
         font-size: 12px;
 
         a{
             color: #0072CE;
         }
+    }
+}
+
+.myteam_wrapper{
+    .weekly-default{
+        .weekly-default-inner{
+            .day_one{
+                .day-one-wrapper{
+                    padding: 3px 12px 4px;
+                }
+                &.disabled, &.current-day{
+                    .day-one-wrapper{
+                        background-image: none;
+                    }
+                }
+            }
+            &:first-child{
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 25px;
+                    width: calc(100% - 50px);
+                    height: 1px;
+                    background: #D1DCE7;
+                }
+            }
+            &:not(:first-child){
+                padding-bottom: 0;
+                .day_one{
+                    .day-name{
+                        display: none;
+                    }
+                    .date{
+                        display: none;
+                    }
+                }
+            }
+            &:last-child{
+                padding-bottom: 25px;
+            }
+            & > div{
+                width: calc((100% / 6) - 10px);
+                margin-right: 10px;
+            }
+            .my_team_member{
+                height: 92px;
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .member-name{
+                    font: 500 14px "Museo Sans Medium";
+                    color: #00355F;
+                    -webkit-text-stroke: 0.2px;
+                    width: calc(100% - 34px);
+                    margin-left: auto;
+                }
+                .designation{
+                    font: 400 12px "Museo Sans Regular";
+                    color: #526E88;
+                    padding-left: 34px;
+                }
+            }
+        }
+    }
+}
+
+.description{
+    textarea{
+        width: 100%;
+        height: 96px;
+        border-radius: 8px;
+        border: 1px solid #D1DCE7;
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+}
+
+#invite_team{
+    .modal-dialog{
+        max-width: 450px;
     }
 }
