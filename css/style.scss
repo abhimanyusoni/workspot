@@ -400,6 +400,10 @@ input[type="text"]{
                         font-weight: 600;
                         margin-top: 5px;
                         display: inline-block;
+
+                        &.closed{
+                            display: none;
+                        }
                     }
                     span{
                         font-size: 12px;
@@ -415,6 +419,10 @@ input[type="text"]{
                         margin-left: 15px;
                         font-weight: 600;
                         line-height: 1;
+
+                        &.closed{
+                            display: none;
+                        }
 
                         img{
                             margin-right: 8px;
@@ -1925,5 +1933,87 @@ input[type="text"]{
 #invite_team{
     .modal-dialog{
         max-width: 450px;
+    }
+}
+
+.edit-badge-number{
+    align-items: center;
+    margin-top: 5px;
+    display: none;
+
+    &.opened{
+        display: flex;
+    }
+    
+    .input-taker{
+        display: flex;
+        align-items: center;
+
+        input{
+            height: 40px;
+
+            &:disabled{
+                width: 50px;
+                text-align: center;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                padding: 0;
+                font-size: 18px;
+                font-family: 'Museo Sans Medium';
+            }
+            &.put-value{
+                width: 110px;
+                border: 1px solid #D1DCE7;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border-left: none;
+                padding: 5px !important;
+                text-align: center;
+                font-size: 18px;
+
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button{
+                    -webkit-appearance: none;
+                }
+            }
+        }
+    }
+    .action-buttons{
+        margin-left: 15px;
+        display: flex; align-items: center;
+
+        .save{
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            color: #fff;
+            background: #005aa3;
+            border: 1px solid #005aa3;
+
+            &:hover{
+                color: #005aa3;
+                background: transparent;
+            }
+        }
+        .cancel{
+            margin-left: 8px;
+            border-radius: 8px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #1F1F25;
+            color: #1F1F25;
+            display: flex;
+            align-items: center;
+            padding: 6px 12px;
+            font-size: 16px;
+
+            &:hover{
+                color: #fff;
+                background: #1F1F25;
+            }
+        }
     }
 }

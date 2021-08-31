@@ -430,6 +430,10 @@ input[type="text"] {
   display: inline-block;
 }
 
+.my-profile .my-profile-inner .right-content .col_one .attr_one p.closed {
+  display: none;
+}
+
 .my-profile .my-profile-inner .right-content .col_one .attr_one span {
   font-size: 12px;
   color: #526E88;
@@ -446,6 +450,10 @@ input[type="text"] {
   margin-left: 15px;
   font-weight: 600;
   line-height: 1;
+}
+
+.my-profile .my-profile-inner .right-content .col_one .attr_one .replace.closed {
+  display: none;
 }
 
 .my-profile .my-profile-inner .right-content .col_one .attr_one .replace img {
@@ -2093,5 +2101,110 @@ input[type="text"] {
 
 #invite_team .modal-dialog {
   max-width: 450px;
+}
+
+.edit-badge-number {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  display: none;
+}
+
+.edit-badge-number.opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.edit-badge-number .input-taker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-badge-number .input-taker input {
+  height: 40px;
+}
+
+.edit-badge-number .input-taker input:disabled {
+  width: 50px;
+  text-align: center;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: 'Museo Sans Medium';
+}
+
+.edit-badge-number .input-taker input.put-value {
+  width: 110px;
+  border: 1px solid #D1DCE7;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: none;
+  padding: 5px !important;
+  text-align: center;
+  font-size: 18px;
+}
+
+.edit-badge-number .input-taker input.put-value::-webkit-outer-spin-button, .edit-badge-number .input-taker input.put-value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.edit-badge-number .action-buttons {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit-badge-number .action-buttons .save {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  background: #005aa3;
+  border: 1px solid #005aa3;
+}
+
+.edit-badge-number .action-buttons .save:hover {
+  color: #005aa3;
+  background: transparent;
+}
+
+.edit-badge-number .action-buttons .cancel {
+  margin-left: 8px;
+  border-radius: 8px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #1F1F25;
+  color: #1F1F25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+.edit-badge-number .action-buttons .cancel:hover {
+  color: #fff;
+  background: #1F1F25;
 }
 /*# sourceMappingURL=style.css.map */

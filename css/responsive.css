@@ -22,6 +22,8 @@
     .office-structure .office-structure-inner .left-panel .office-resource{padding: 20px 18px;}
     .myteam_wrapper .weekly-default .weekly-default-inner .my_team_member .member-name{font-size: 12px;}
     .myteam_wrapper .weekly-default .weekly-default-inner .my_team_member .designation{font-size: 10px;}
+    .edit-badge-number.opened{display: block;}
+    .edit-badge-number .action-buttons{margin-left: 0; margin-top: 12px;}
 }
 
 @media (max-width: 991px){
@@ -66,6 +68,7 @@
     .myteam_wrapper .weekly-default .weekly-default-inner::after{content: ''; position: absolute; bottom: 0; left: 25px; width: calc(100% - 50px); height: 1px; background: #D1DCE7;}
     .myteam_wrapper .weekly-default .weekly-default-inner:not(:first-child) .day_one .day-name{display: block;}
     .myteam_wrapper .weekly-default .weekly-default-inner:not(:first-child) .day_one .date{display: flex;}
+    .edit-badge-number .input-taker, .edit-badge-number .action-buttons{justify-content: center;}
 }
 
 @media (max-width: 767px){

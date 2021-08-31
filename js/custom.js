@@ -33,3 +33,15 @@ $(document).mouseup(function(e)
         container.children('span').removeClass('close-btn');
     }
 });
+
+$('.my-profile .my-profile-inner .attr_one .replace').click(function(){
+    $(this).toggleClass('closed');
+    $(this).siblings('p').toggleClass('closed');
+    $(this).siblings('.edit-badge-number').toggleClass('opened')
+})
+
+$('.edit-badge-number .action-buttons .save, .edit-badge-number .action-buttons .cancel').click(function(){
+    $('.edit-badge-number').removeClass('opened');
+    $('.my-profile .my-profile-inner p.closed').removeClass('closed');
+    $('.my-profile .my-profile-inner .replace.closed').removeClass('closed')
+})
