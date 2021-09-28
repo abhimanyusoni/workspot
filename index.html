@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
 </head>
+
 <body>
 
     <header class="site-header">
@@ -30,14 +33,25 @@
                         <span>Alexander</span> <img src="./images/profileof.png" class="user-img" alt="">
                     </div>
                     <div class="profile-inner">
-                        <ul class="profile-menus">
-                            <li><a href="./profilepage.html">Profile</a></li>
-                            <li><a href="./onboarding.html">On Boarding</a></li>
-                            <li><a href="javascript:void(0)">Options</a></li>
-                            <li><a href="javascript:void(0)">Change password</a></li>
-                            <li><a href="javascript:void(0)">Logout</a></li>
-                        </ul>
+                        <div class="head">
+                            <span>This is your account</span>
+                        </div>
+                        <div class="profile-popup-main">
+                            <img src="./images/profileof.png" alt="">
+                            <h3>Alexander Doe</h3>
+                            <p>alexander.doe@example.com</p>
+                            <button type="button" class="w-100 blue-color-btn">View My Profile</button>
+                        </div>
+                        <div class="popup-secondary-profile">
+                            <img src="./images/profileof.png" alt="">
+                            <div class="sec-profile-info">
+                                <h4>Jane Cooper</h4>
+                                <span>janeсooper@example.com</span>
+                            </div>
+                        </div>
+                        <a href="#" class="logout">Log out</a>
                     </div>
+
                     <button class="mobile-menu-toggler">
                         <span></span>
                         <span></span>
@@ -63,7 +77,8 @@
                         <img src="./images/Union.svg" alt=""> 2445 M Street NW, Washington, DC 20037
                     </div>
                     <div class="change-workspot d-flex align-items-center">
-                        <img src="./images/edit-pen.svg" alt=""> <a href="javascript:void(0)" class="change-workspot">Change Today's Workspot</a>
+                        <img src="./images/edit-pen.svg" alt=""> <a href="javascript:void(0)"
+                            class="change-workspot">Change Today's Workspot</a>
                     </div>
                 </div>
             </div>
@@ -133,7 +148,7 @@
         <div class="container">
             <div class="update-office-workspot mt-40">
                 <p class="week-range">June 14 – 18, 2021</p>
-                
+
                 <div class="input-button-strip w-100 d-flex align-items-center">
                     <div class="change-log">
                         <button type="submit" class="prev">&lsaquo;</button>
@@ -141,16 +156,22 @@
                         <button type="submit" class="next">&rsaquo;</button>
                     </div>
                     <div class="week-month-toggle nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link week-view active" id="nav-week-tab" data-bs-toggle="tab" data-bs-target="#nav-week-view" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Week</button>
-                        <button class="nav-link week-view" id="nav-month-tab" data-bs-toggle="tab" data-bs-target="#nav-month-view" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Month</button>
+                        <button class="nav-link week-view active" id="nav-week-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-week-view" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Week</button>
+                        <button class="nav-link week-view" id="nav-month-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-month-view" type="button" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Month</button>
                     </div>
                     <div class="updatespot">
-                        <button type="submit" class="blue-bg-btn" data-bs-toggle="modal" data-bs-target="#showCalendar">Update My Workspot</button>                   
+                        <button type="submit" class="blue-bg-btn" data-bs-toggle="modal"
+                            data-bs-target="#showCalendar">Update My Workspot</button>
                     </div>
                 </div>
 
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-week-view" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="tab-pane fade show active" id="nav-week-view" role="tabpanel"
+                        aria-labelledby="nav-home-tab">
                         <div class="card weekly-default">
                             <div class="card mt-4 weekly-default-inner d-flex flex-wrap">
                                 <div class="day_one disabled">
@@ -209,7 +230,8 @@
                                     <p class="date">1</p>
                                     <div class="day-one-wrapper work-from-office border-top-blue">
                                         <p class="work-station">Washington, DC</p>
-                                        <span class="floor-location"><img src="./images/floor-location.png" alt="">Fl 4-Blue</span>
+                                        <span class="floor-location"><img src="./images/floor-location.png" alt="">Fl
+                                            4-Blue</span>
                                     </div>
                                 </div>
                                 <div class="day_one disabled">
@@ -454,9 +476,10 @@
                     </div>
                 </div>
 
-                
 
-                <button type="submit" class="light-blue-bg-btn mt-4"> <img src="./images/search-blue.svg" alt=""> Search for Colleagues</button>
+
+                <button type="submit" class="light-blue-bg-btn mt-4"> <img src="./images/search-blue.svg" alt=""> Search
+                    for Colleagues</button>
 
             </div>
         </div>
@@ -475,110 +498,117 @@
             </div>
         </div>
     </footer>
-    
+
     <div class="modal fade" id="showCalendar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Update My Workspot</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="calendarpop">
-                  <div class="selection">
-                    <select name="" id="">
-                        <option value="">Remote Work</option>
-                        <option value="">Washington, DC</option>
-                        <option value="">Malbourne, Aus</option>
-                        <option value="">Lord's, UK</option>
-                    </select>
-                  </div>
-                  <div class="calendar_main">
-                        <div class="top">
-                            <span class="innertext">
-                                No selected date(s)
-                            </span>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Update My Workspot</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="calendarpop">
+                        <div class="selection">
+                            <select name="" id="">
+                                <option value="">Remote Work</option>
+                                <option value="">Washington, DC</option>
+                                <option value="">Malbourne, Aus</option>
+                                <option value="">Lord's, UK</option>
+                            </select>
                         </div>
-                        <div class="datepicker-Wrapper">
-                            <div class="datepicker">
-                                <div class="datepicker-top">
-                                    <div class="month-selector">
-                                        <span class="month-name">December 2020</span>
-                                        <div class="d-flex">
-                                            <button class="arrow"><i class="material-icons">chevron_left</i></button>
-                                            <button class="arrow"><i class="material-icons">chevron_right</i></button>
+                        <div class="calendar_main">
+                            <div class="top">
+                                <span class="innertext">
+                                    No selected date(s)
+                                </span>
+                            </div>
+                            <div class="datepicker-Wrapper">
+                                <div class="datepicker">
+                                    <div class="datepicker-top">
+                                        <div class="month-selector">
+                                            <span class="month-name">December 2020</span>
+                                            <div class="d-flex">
+                                                <button class="arrow"><i
+                                                        class="material-icons">chevron_left</i></button>
+                                                <button class="arrow"><i
+                                                        class="material-icons">chevron_right</i></button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="datepicker-calendar">
-                                    <span class="day">S</span>
-                                    <span class="day">M</span>
-                                    <span class="day">T</span>
-                                    <span class="day">W</span>
-                                    <span class="day">T</span>
-                                    <span class="day">F</span>
-                                    <span class="day">S</span>
-                                    <button class="date faded">30</button>
-                                    <button class="date">1</button>
-                                    <button class="date">2</button>
-                                    <button class="date">3</button>
-                                    <button class="date">4</button>
-                                    <button class="date">5</button>
-                                    <button class="date">6</button>
-                                    <button class="date">7</button>
-                                    <button class="date">8</button>
-                                    <button class="date current-day eab-office">9</button>
-                                    <button class="date remote-work">10</button>
-                                    <button class="date remote-work">11</button>
-                                    <button class="date remote-work">12</button>
-                                    <button class="date remote-work">13</button>
-                                    <button class="date">14</button>
-                                    <button class="date">15</button>
-                                    <button class="date eab-office">16</button>
-                                    <button class="date">17</button>
-                                    <button class="date remote-work">18</button>
-                                    <button class="date">19</button>
-                                    <button class="date paid-time-off">20</button>
-                                    <button class="date paid-time-off">21</button>
-                                    <button class="date paid-time-off">22</button>
-                                    <button class="date">23</button>
-                                    <button class="date">24</button>
-                                    <button class="date remote-work">25</button>
-                                    <button class="date">26</button>
-                                    <button class="date eab-office">27</button>
-                                    <button class="date">28</button>
-                                    <button class="date">29</button>
-                                    <button class="date">30</button>
-                                    <button class="date">31</button>
-                                    <button class="date faded">1</button>
-                                    <button class="date faded">2</button>
-                                    <button class="date faded">3</button>
+                                    <div class="datepicker-calendar">
+                                        <span class="day">S</span>
+                                        <span class="day">M</span>
+                                        <span class="day">T</span>
+                                        <span class="day">W</span>
+                                        <span class="day">T</span>
+                                        <span class="day">F</span>
+                                        <span class="day">S</span>
+                                        <button class="date faded">30</button>
+                                        <button class="date">1</button>
+                                        <button class="date">2</button>
+                                        <button class="date">3</button>
+                                        <button class="date">4</button>
+                                        <button class="date">5</button>
+                                        <button class="date">6</button>
+                                        <button class="date">7</button>
+                                        <button class="date">8</button>
+                                        <button class="date current-day eab-office">9</button>
+                                        <button class="date remote-work">10</button>
+                                        <button class="date remote-work">11</button>
+                                        <button class="date remote-work">12</button>
+                                        <button class="date remote-work">13</button>
+                                        <button class="date">14</button>
+                                        <button class="date">15</button>
+                                        <button class="date eab-office">16</button>
+                                        <button class="date">17</button>
+                                        <button class="date remote-work">18</button>
+                                        <button class="date">19</button>
+                                        <button class="date paid-time-off">20</button>
+                                        <button class="date paid-time-off">21</button>
+                                        <button class="date paid-time-off">22</button>
+                                        <button class="date">23</button>
+                                        <button class="date">24</button>
+                                        <button class="date remote-work">25</button>
+                                        <button class="date">26</button>
+                                        <button class="date eab-office">27</button>
+                                        <button class="date">28</button>
+                                        <button class="date">29</button>
+                                        <button class="date">30</button>
+                                        <button class="date">31</button>
+                                        <button class="date faded">1</button>
+                                        <button class="date faded">2</button>
+                                        <button class="date faded">3</button>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="bottom">
+                                <span class="eab-ofc">EAB Office</span>
+                                <span class="remote">Remote Work</span>
+                                <span class="paidoff">Paid Time Off</span>
+                            </div>
                         </div>
-                        <div class="bottom">
-                            <span class="eab-ofc">EAB Office</span>
-                            <span class="remote">Remote Work</span>
-                            <span class="paidoff">Paid Time Off</span>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="private-space">
+                            <label for="private-space">Private space requested</label>
                         </div>
-                  </div>
-                  <div class="checkbox-label">
-                        <input type="checkbox" id="private-space">
-                        <label for="private-space">Private space requested</label>
-                  </div>
-                  <p class="notice">If you would like to update your weekly default, you can update this under <a href="javascript:void(0)">My Profile</a></p>
-              </div>
+                        <p class="notice">If you would like to update your weekly default, you can update this under <a
+                                href="javascript:void(0)">My Profile</a></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn save-data">Update</button>
+                    <button type="button" class="btn dismiss" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn save-data">Update</button>
-              <button type="button" class="btn dismiss" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
         </div>
-      </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <script src="./js/custom.js"></script>
 </body>
+
 </html>
